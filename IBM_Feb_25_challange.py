@@ -6,7 +6,7 @@ C:/Users/Magshimim/source/repos/IbmChallangeAttempt
 
 N = 4
 
-file = open(f"C:/Users/Magshimim/source/repos/IbmChallangeAttempt/N={N}.txt", "r")
+file = open(f"FILE_PATH/N={N}.txt", "r")
 s = file.read()
 s = s.split('\n')[:-1]
 
