@@ -203,7 +203,7 @@ void addAllWithA(int A) {
 
 
 int main() {
-	outputFile.open("C:\\Users\\Magshimim\\source\\repos\\IbmChallangeAttempt\\N=6.txt");
+	outputFile.open("FILE_PATH");
 	startTime = std::chrono::steady_clock::now();
 
 	for (int A = 0; A <= 9*N; A++) {
@@ -212,17 +212,6 @@ int main() {
 		#endif // PRINT_PROGRESS
 		addAllWithA(A);
 	}
-
-	root = new ST;
-	vector<int> primes = allPrimesWithNDigits(N, 22);
-	
-	//for (int p : primes)
-	//	cout << p << " ";
-	//cout << endl;
-	//
-	//for (int p : primes)
-	//	root->add(p);
-
 
 	cout << "\nTime takem: " << deltaTime()/1000 << "s\n";
 	outputFile << "Time takem: " << deltaTime() / 1000 << "s\n";
